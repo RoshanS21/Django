@@ -9,3 +9,6 @@
 
 # Create app
 * python manage.py startapp appName
+
+# Create table in database
+* python manage.py migrate
