@@ -1,7 +1,7 @@
 # Commands
 
 # Start new Project. (sudo apt install python3-django)
-* django-admin startproject CountPops
+* django-admin startproject mysite
 
 # Run Server
 * python manage.py runserver [portNumber]
@@ -12,3 +12,19 @@
 
 # Create table in database
 * python manage.py migrate
+
+# Store changes as a migration
+* python manage.py makemigrations appName
+
+# sqlmigrate takes migration names and returns their SQL
+* python manage.py sqlmigrate appName 0001
+
+# migrate applies changes to the database
+* python manage.py migrate
+
+# Python shell
+* python manage.py shell
+
+# Create an admin user
+* python manage.py createsuperuser
+
